@@ -18,7 +18,7 @@ const Login = () => {
   }
 
   return (
-    <div className="h-[100vh] bg-bg-2 bg-cover relative w-full p-6">
+    <div className="h-[100vh] bg-pink-400 bg-cover relative w-full p-6">
       <div >
         <Link href={`/`}>
           <Button className='w-[150px] bg-white-50  p-2
