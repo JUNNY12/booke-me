@@ -27,7 +27,7 @@ const Login = () => {
       </div>
       {/* <div className="absolute inset-0  h-[100vh] bg-black-950 bg-opacity-60 w-full"> */}
         <div className='flex justify-center items-center'>
-          <form action="" className='w-[400px] mobileXL:w-[300px] rounded-md h-[500px] mt-12
+          <form action="" className='w-[400px] mobileXL:w-[300px] rounded-md h-[500px] mt-20
            bg-[#ffffff88] shadow-md  shadow-black-800 p-2
            flex items-center justify-center flex-col mobileM:p-1
            '>
@@ -38,7 +38,7 @@ const Login = () => {
               Login
             </Typography>
 
-            {/* <div className='mb-4 flex items-center '>
+            <div className='mb-4 flex items-center '>
               <div className='h-[45px] w-[45px] rounded-tl-sm flex items-center justify-center text-3xl
                rounded-bl-sm  bg-[#ffffff88]'>
                 <AiOutlineMail className='text-white-50' />
@@ -113,7 +113,7 @@ const Login = () => {
              p-3 font-bold text-white-950 rounded-[40px] inline-flex items-center justify-center`}>
               <span> <Image src='/icons/icons8-google.svg' width={25} height={25} /></span>
               <span className='ms-2'>Login with Google</span>
-            </Button> */}
+            </Button>
 
           </form>
         </div>
