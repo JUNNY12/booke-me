@@ -4,7 +4,7 @@ import Typography from '@/components/elements/Typography'
 import BookCard from './BookCard'
 import { FlexContainer } from '@/components/modules/Container'
 
-const Books =[
+export const Books =[
     {
       "id": 1,
       "title": "The Great Gatsby",
@@ -57,7 +57,8 @@ const Books =[
       "publication_year": 2011,
       "genre": "Non-fiction",
       "language": "English",
-      "price":40
+      "price":40,
+      "image":'/images/sapiens.jpg'
     },
     {
       "id": 6,
@@ -67,14 +68,15 @@ const Books =[
       "publication_year": 1951,
       "genre": "Fiction",
       "language": "English",
-      "price": 30
+      "price": 30,
+      "image":'/images/catcher.jpg'
     }
 ]
   
 
 const PopularBooks = () => {
   return (
-    <Container>
+    <Container className={` bg-white-100`}>
         <Typography variants={`2`} className={` text-3xl font-semibold text-center text-white-950`}>
             Popular Books
         </Typography>

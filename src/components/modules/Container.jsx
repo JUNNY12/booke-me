@@ -1,6 +1,6 @@
 export const Container = ({children, className}) => {
     return (
-        <section className={`${className} m-8 p-10`}>
+        <section className={`${className} m-8 tabletS:mx-0 tabletS:px-4 tabletS:my-0  p-10`}>
             {children}
         </section>
     )
