@@ -31,18 +31,16 @@ const Explore = () => {
                     <Typography variants={1} className=' text-5xl mobileXL:text-3xl mb-6'>
                         Indulge Your Passion for Reading
                     </Typography>
-                    <p className="text-2xl mobileXL:text-lg italic max-w-[600px] mb-4">
-                        Immerse yourself in a world of literature with our carefully
-                        curated selection of books,
-                        designed to cater to every interest and taste
-                    </p>
+                    <p className='text-4xl text-center tabletXS:text-2xl'>Browse through our complete Library</p>
 
-                    <Button className={`bg-pink-600 text-white-50 transition ease-in-out duration-500 font-semibold
-                                     w-[180px] inline-flex items-center hover:text-white-950 justify-center p-2
-                                     rounded-[20px] hover:bg-white-50`}>
-                        <span className='me-3'>See More</span>
-                        <span><AiOutlineArrowRight /></span>
-                    </Button>
+                    <div className='mt-4 text-center'>
+                        <Button className={`bg-pink-600 text-white-50 transition ease-in-out duration-500 font-semibold
+                    w-[180px] inline-flex items-center hover:text-white-950 justify-center p-2
+                    rounded-[20px] hover:bg-white-50`}>
+                            <span className='me-3'>Browse Collection</span>
+                            <span><AiOutlineArrowRight /></span>
+                        </Button>
+                    </div>
                 </Container>
             </div>
         </div>
