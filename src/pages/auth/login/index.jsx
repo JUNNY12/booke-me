@@ -27,7 +27,7 @@ const Login = () => {
       </div>
       {/* <div className="absolute inset-0  h-[100vh] bg-black-950 bg-opacity-60 w-full"> */}
       <div className='flex justify-center items-center'>
-        <form action="" className='w-[400px] mobileXL:w-[300px] rounded-md h-[500px] mt-16
+        <form action="" className='w-[400px] mobileXL:w-[300px] rounded-md h-[500px] mt-8
            bg-[#ffffff88] shadow-md  shadow-black-800 p-2
            flex items-center justify-center flex-col mobileM:p-1
            '>
