@@ -36,7 +36,7 @@ const Header = () => {
                     </Link>
                 </ul>
 
-                <div className=' relative cursor-pointer tabletL:absolute right-[8 0px]'>
+                <div className=' relative cursor-pointer tabletL:absolute right-[80px]'>
                         <div className='absolute top-[-10px] right-[-20px]
                          bg-pink-600 rounded-full w-[20px] h-[20px] text-white-50
                         text-xs flex justify-center items-center'>0
