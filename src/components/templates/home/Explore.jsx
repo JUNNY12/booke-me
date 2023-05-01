@@ -1,6 +1,7 @@
 import { Button } from '@/components/elements/Button'
 import React from 'react'
 import { AiOutlineArrowRight } from "react-icons/ai"
+import { Container } from '@/components/modules/Container'
 
 
 const Explore = () => {
@@ -8,7 +9,7 @@ const Explore = () => {
         <section className=' bg-bg-4 bg-cover h-[250px] relative p-10 ' >
             <div className='absolute inset-0  h-[250px] flex items-center justify-center 
              bg-black-950 bg-opacity-60 text-white-50 '>
-                <div className='p-3'>
+                <Container>
                     <p className='text-4xl text-center tabletXS:text-2xl'>Browse through our complete Library</p>
 
                     <div className='mt-4 text-center'>
@@ -19,7 +20,7 @@ const Explore = () => {
                             <span><AiOutlineArrowRight /></span>
                         </Button>
                     </div>
-                </div>
+                </Container>
             </div>
 
         </section>
