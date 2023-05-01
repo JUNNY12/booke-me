@@ -12,7 +12,7 @@ const NewBooks = () => {
             New Books
         </Typography>
 
-        <FlexContainer className='overflow-auto snap-mandatory scroll-smooth scrollbar-hide gap-x-8'>
+        <FlexContainer className='overflow-auto snap-mandatory scroll-smooth scrollbar-hide'>
             {
                 Books.slice(0,6).map((book) => {
                     const{ id, title, author, description, publication_year,genre,language, image , price} = book

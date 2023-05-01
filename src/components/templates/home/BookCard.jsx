@@ -9,7 +9,7 @@ import { BsCartPlus } from 'react-icons/bs'
 
 const BookCard = ({ id, title, author, price, description, publication_year, genre, language, image }) => {
     return (
-        <Card className={`flex-shrink-0 snap-start`}>
+        <Card className={`flex-shrink-0 snap-start me-8`}>
             <div className='h-[250px] w-full object-cover rounded-sm'>
                 <Image src={image} alt={title} width={200} height={300} className='w-full h-full object-cover rounded-sm' priority />
             </div>
