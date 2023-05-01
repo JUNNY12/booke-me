@@ -102,7 +102,7 @@ const Login = () => {
 
             <div className='mt-2'>
               <Typography variants={`3`} className={`text-white-950 text-center mt-2 font-bold  mobileM:text-[15px]`}>
-                Don't have an account? <span className='text-pink-600 ms-4'><Link href={`/auth/register`}>Sign Up</Link></span>
+                Don't have an account? <span className='text-pink-600 ms-2'><Link className='hover:underline' href={`/auth/register`}>Sign Up</Link></span>
               </Typography>
             </div>
 

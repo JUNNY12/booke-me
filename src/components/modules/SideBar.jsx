@@ -35,7 +35,7 @@ const SideBar = ({ setShowSideBar, showSideBar }) => {
                     <li className='me-8 my-2 ms-6 transition duration-500 ease-in-out hover:text-pink-600'>Contact</li>
                 </Link>
                 <Link href={`/auth/login`}>
-                    <li className=' ms-6 absolute bottom-2 ' >
+                    <li className=' ms-4 absolute bottom-2 ' >
                         <Button className={` bg-pink-600 rounded-[20px] text-center  p-[0.15rem] pb-2 text-lg 
                             font-semibold text-white-50 w-[150px]
                             hover:bg-white-50 hover:border border-pink-600 transition ease-in-out duration-500 hover:text-white-950
