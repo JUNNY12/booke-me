@@ -2,6 +2,7 @@ import { Button } from '@/components/elements/Button'
 import React from 'react'
 import { AiOutlineArrowRight } from "react-icons/ai"
 import { Container } from '@/components/modules/Container'
+import Typography from '@/components/elements/Typography'
 
 
 const Explore = () => {
