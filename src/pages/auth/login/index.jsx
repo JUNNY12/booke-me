@@ -18,11 +18,11 @@ const Login = () => {
   }
 
   return (
-    <div className="h-[100vh] bg-bg-2 bg-cover relative w-full">
-      <div className='absolute top-6 left-8 bg-white-50 p-2 mobileM:left-2
-       rounded-sm hover:bg-pink-600  hover:text-white-50 font-semibold  z-10'>
+    <div className="h-[100vh] bg-bg-2 bg-cover relative w-full p-2">
+      <div >
         <Link href={`/`}>
-          <Button>Back Home</Button>
+          <Button className='w-[150px] bg-white-50  p-2
+         rounded-sm hover:bg-pink-600  hover:text-white-50 font-semibold  z-10'>Back Home</Button>
         </Link>
       </div>
       {/* <div className="absolute inset-0  h-[100vh] bg-black-950 bg-opacity-60 w-full"> */}
