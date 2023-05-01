@@ -18,7 +18,7 @@ const Login = () => {
   }
 
   return (
-    <div className="h-[100vh] bg-bg-3 bg-cover relative">
+    <div className="h-[100vh] bg-bg-2 bg-cover relative">
       <div className='absolute top-6 left-6 bg-white-50 p-2
        rounded-sm hover:bg-pink-600  hover:text-white-50 font-semibold  z-10'>
         <Link href={`/`}>
@@ -26,8 +26,8 @@ const Login = () => {
         </Link>
       </div>
       <div className="absolute inset-0  h-[100vh] bg-black-950 bg-opacity-60">
-        <Container className='flex justify-center items-center h-[95vh]'>
-          <form action="" className='w-[400px] mobileXL:w-[300px] rounded-md h-[500px] mt-20
+        <Container className='flex justify-center items-center'>
+          <form action="" className='w-[400px] mobileXL:w-[300px] rounded-md h-[500px] mt-12
            bg-[#ffffff88] shadow-md  shadow-black-800 p-2
            flex items-center justify-center flex-col mobileM:p-1
            '>
