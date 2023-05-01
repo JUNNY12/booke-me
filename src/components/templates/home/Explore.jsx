@@ -25,7 +25,7 @@ const Explore = () => {
         //     </div>
 
         // </section>
-        <div className="h-[250px] bg-bg-3 bg-cover relative">
+        <div className="h-[250px] bg-bg-4 bg-cover relative">
             <div className="absolute inset-0  h-[250px] bg-black-950 bg-opacity-60">
                 <Container className='pt-20 text-white-50 flex h-[250px] justify-center flex-col'>
                     <p className='text-4xl text-center tabletXS:text-2xl'>Browse through our complete Library</p>
