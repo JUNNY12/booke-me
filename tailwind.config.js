@@ -71,6 +71,7 @@ module.exports = {
         'bg-2': 'url("/images/bg-2.webp")',
         'bg-3': 'url("/images/bg3.webp")',
         'bg-4': 'url("/images/bg-4.webp")',
+        'bg-5': 'url("/images/bg-5.webp")',
       },
     },
   },

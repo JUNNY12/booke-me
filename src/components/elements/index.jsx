@@ -1,2 +1,9 @@
-export * from "@elements/Button"
-export * from "@elements/Typography"
+import { Button } from "./Button";
+import Typography from "./Typography";
+import Input from "./Input";
+
+export{
+    Button,
+    Typography,
+    Input
+}

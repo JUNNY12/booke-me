@@ -1,6 +1,19 @@
-export * from "@modules/Card"
-export * from "@modules/Header"
-export * from "@modules/Footer"
-export * from "@modules/Container"
-export * from "@modules/FlexContainer"
-export * from "@modules/GridContainer"
+
+import Card from "./Card"
+import Header from "./Header"
+import Footer from "./Footer"
+import Container from "./Container"
+import FlexContainer from "./FlexContainer"
+import GridContainer from "./GridContainer"
+import SideBar from "./SideBar"
+
+export{
+    Card,
+    Header,
+    Footer,
+    Container,
+    FlexContainer,
+    GridContainer,
+    SideBar
+
+}

@@ -3,14 +3,35 @@ import { AiOutlineMenu, AiOutlineShoppingCart } from "react-icons/ai"
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Button } from '../elements/Button'
+import SideBar from './SideBar'
+import { useState } from 'react'
+import { useWidth } from '@/hooks'
 
 const Header = () => {
     const router = useRouter();
+    const [showSideBar, setShowSideBar] = useState(false)
+    const width = useWidth()
+
+    const isMobile = width < 1024
+
+    const handleShowSideBar = () => {
+        setShowSideBar(prev => !prev)
+     
+    }
+
 
     return (
         <header className='text-white-950 px-10 py-6 tabletXS:px-4 relative bg-white-50'>
-            <nav className=' flex gap-x-40 justify-between items-center'>
-                <div className='text-2xl font-bold mobileXL:text-xl'>Booke</div>
+            <div className={`${!showSideBar ? 'opacity-0 transition duration-500 ease-in-out' : 'opacity-100 transition duration-500 ease-in-out'}`}>
+                {
+                    (isMobile && showSideBar) && <SideBar
+                        setShowSideBar={setShowSideBar}
+                        showSideBar={showSideBar}
+                    />
+                }
+            </div>
+            <nav className={`flex gap-x-40 justify-between items-center`}>
+                <div className='text-2xl font-bold mobileXL:text-xl text-pink-600'>Booke</div>
                 <ul className='flex text-xl tabletL:hidden'>
                     <Link href={`/`} className={` ${router.pathname == '/' ? ' text-pink-600 font-bold' : ''} `}>
                         <li className='me-8 hover:text-pink-600 text-center transition duration-500 ease-in-out'>Home</li>
@@ -36,15 +57,18 @@ const Header = () => {
                     </Link>
                 </ul>
 
-                <div className=' relative cursor-pointer tabletL:absolute right-[80px]'>
-                        <div className='absolute top-[-10px] right-[-20px]
+                <div className={` relative cursor-pointer tabletL:absolute right-[80px] ${showSideBar? "hidden" : 'block'}`}>
+                    <div className={`absolute top-[-10px] right-[-20px]
                          bg-pink-600 rounded-full w-[20px] h-[20px] text-white-50
-                        text-xs flex justify-center items-center'>0
-                        </div>
+                        text-xs flex justify-center items-center `}>0
+                    </div>
                     <AiOutlineShoppingCart className='text-2xl' />
                 </div>
 
-                <div className='text-2xl hidden tabletL:block'>
+                <div className='text-2xl hidden tabletL:block'
+                    onClick={handleShowSideBar}
+                    title='Open Sidebar'
+                >
                     <AiOutlineMenu />
                 </div>
             </nav>

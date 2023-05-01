@@ -43,11 +43,11 @@ const FeaturedBook = () => {
                 </div>
 
                 <div className=' w-[300px] h-[400px] object-cover rounded-sm mb-8 order-1'>
-                    <Image src={`/images/simplified js.jpg`} width={300} height={300} priority className='w-full h-full object-cover rounded-sm' />
+                    <Image src={`/images/simplified js.jpg`} width={300} height={300} priority alt='Ebenezer don' className='w-full h-full object-cover rounded-sm' />
                 </div>
 
                 <div className=' w-[300px] h-[400px] object-cover rounded-sm mb-8 order-last'>
-                    <Image src='/images/simplified-javascript.jpg' width={300} height={300} priority className='w-full h-full object-cover rounded-sm' />
+                    <Image src='/images/simplified-javascript.jpg' width={300} height={300} priority alt='Ebenezer don' className='w-full h-full object-cover rounded-sm' />
                 </div>
             </FlexContainer>
         </Container>
