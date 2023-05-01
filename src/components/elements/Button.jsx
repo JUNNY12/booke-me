@@ -1,7 +1,7 @@
 
-export const Button = ({children, className}) => {
+export const Button = ({children, className, ...rest}) => {
     return (
-        <button className={`${className}`}>{children}</button>
+        <button className={`${className}`} {...rest}>{children}</button>
     )
 
 }
