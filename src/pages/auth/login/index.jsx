@@ -18,7 +18,7 @@ const Login = () => {
   }
 
   return (
-    <div className="h-[100vh] bg-bg-2 bg-cover relative w-full p-2">
+    <div className="h-[100vh] bg-bg-2 bg-cover relative w-full p-6">
       <div >
         <Link href={`/`}>
           <Button className='w-[150px] bg-white-50  p-2
@@ -27,7 +27,7 @@ const Login = () => {
       </div>
       {/* <div className="absolute inset-0  h-[100vh] bg-black-950 bg-opacity-60 w-full"> */}
       <div className='flex justify-center items-center'>
-        <form action="" className='w-[400px] mobileXL:w-[300px] rounded-md h-[500px] mt-20
+        <form action="" className='w-[400px] mobileXL:w-[300px] rounded-md h-[500px] mt-16
            bg-[#ffffff88] shadow-md  shadow-black-800 p-2
            flex items-center justify-center flex-col mobileM:p-1
            '>
