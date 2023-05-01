@@ -18,7 +18,7 @@ const Login = () => {
   }
 
   return (
-    <div className="h-[100vh] bg-bg-5 bg-cover relative">
+    <div className="h-[100vh] bg-bg-3 bg-cover relative">
       <div className='absolute top-6 left-6 bg-white-50 p-2
        rounded-sm hover:bg-pink-600  hover:text-white-50 font-semibold  z-10'>
         <Link href={`/`}>
