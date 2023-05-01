@@ -19,7 +19,7 @@ const Login = () => {
 
   return (
     <div className="h-[100vh] bg-bg-2 bg-cover relative w-full">
-      <div className='absolute top-6 left-6 bg-white-50 p-2
+      <div className='absolute top-6 left-8 bg-white-50 p-2
        rounded-sm hover:bg-pink-600  hover:text-white-50 font-semibold  z-10'>
         <Link href={`/`}>
           <Button>Back Home</Button>
@@ -31,17 +31,17 @@ const Login = () => {
            bg-[#ffffff88] shadow-md  shadow-black-800 p-2
            flex items-center justify-center flex-col mobileM:p-1
            '>
-            <div className='text-5xl text-white-50 flex justify-center items-center mb-2'>
+            <div className='text-5xl text-white-950 flex justify-center items-center mb-2'>
               <FaUserCircle />
             </div>
-            <Typography variants={`1`} className={`text-3xl mb-2 text-white-50 text-center`}>
+            <Typography variants={`1`} className={`text-3xl mb-2 text-white-950 text-center`}>
               Login
             </Typography>
 
             <div className='mb-4 flex items-center '>
               <div className='h-[45px] w-[45px] rounded-tl-sm flex items-center justify-center text-3xl
                rounded-bl-sm  bg-[#ffffff88]'>
-                <AiOutlineMail className='text-white-50' />
+                <AiOutlineMail className='text-white-950' />
               </div>
               <div>
                 <Input
@@ -58,7 +58,7 @@ const Login = () => {
             <div className='mb-4 flex items-center'>
             <div className='h-[45px] w-[45px] rounded-tl-sm flex items-center justify-center text-xl
                rounded-bl-sm   bg-[#ffffff88]'>
-                <FaKey className='text-white-50' />
+                <FaKey className='text-white-950' />
               </div>
               <div className='relative'>
                 <div onClick={handlePasswordVisibility} className='absolute top-4 right-4'>
@@ -101,7 +101,7 @@ const Login = () => {
              `}>Login</Button>
 
             <div className='mt-2'>
-              <Typography variants={`3`} className={`text-white-50 text-center mt-2 font-bold  mobileM:text-[15px]`}>
+              <Typography variants={`3`} className={`text-white-950 text-center mt-2 font-bold  mobileM:text-[15px]`}>
                 Don't have an account? <span className='text-pink-600 ms-4'><Link href={`/auth/register`}>Sign Up</Link></span>
               </Typography>
             </div>
