@@ -10,18 +10,11 @@ const Shipping = () => {
                 <Typography variants={`1`} className={`text-3xl mb-6 text-white-950 text-center`}>
                     Account Setup
                 </Typography>
-                <div className='flex justify-between mb-3 items-center'>
+                <div className=' mb-3'>
                     <div className=''>
                         <Typography variants={`2`} className={`text-2xl text-white-950`}>
                             Shipping Info
                         </Typography>
-                    </div>
-
-                    <div className=''>
-                        <Button className={`w-[90px] bg-white-50  p-2
-                         rounded-sm hover:bg-pink-600  hover:text-white-50 font-semibold `}>
-                            Next
-                        </Button>
                     </div>
                 </div>
 
