@@ -8,14 +8,14 @@ const BlogCard = ({ title, date, description, image }) => {
     const day = newDate.toLocaleString('default', { day: 'numeric' })
     const year = newDate.toLocaleString('default', { year: 'numeric' })
     return (
-        <div className={`w-[250px] mb-8 bg-white-50 shadow-md shadow-black-400 
-        h-[300px] border rounded-md border-white-200 p-2 cursor-pointer
+        <div className={`w-[250px] mb-8 bg-white-50 shadow-sm shadow-black-400 
+        h-[320px] rounded-md p-2 cursor-pointer
         hover:-translate-y-2 transition ease-in-out duration-500
         `}>
             <div className='h-[150px] w-full object-cover rounded-sm'>
                 <Image src={image} alt={title} width={200} height={300} className='w-full h-full object-cover rounded-sm' priority />
             </div>
-            <Typography variants={3} className={`mt-2 text-xl font-semibold hover:underline hover:text-pink-600`}>
+            <Typography variants={3} className={`mt-2 text-lg font-semibold hover:underline hover:text-pink-600`}>
                 {title.substr(0, 20) + '...'}
             </Typography>
             <div className='mt-2 text-lg italic'>
@@ -23,7 +23,7 @@ const BlogCard = ({ title, date, description, image }) => {
             </div>
 
             <p className='mt-2'>
-                {description.substr(0, 50) + '...'}
+                {description.substr(0, 40) + '...'}
             </p>
 
 

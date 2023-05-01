@@ -36,9 +36,9 @@ const Header = () => {
                     </Link>
                 </ul>
 
-                <div className=' relative cursor-pointer tabletXS:absolute right-[100px]'>
-                        <div className='absolute top-[-15px] right-[-25px]
-                         bg-pink-600 rounded-full w-[25px] h-[25px] text-white-50
+                <div className=' relative cursor-pointer tabletL:absolute right-[8 0px]'>
+                        <div className='absolute top-[-10px] right-[-20px]
+                         bg-pink-600 rounded-full w-[20px] h-[20px] text-white-50
                         text-xs flex justify-center items-center'>0
                         </div>
                     <AiOutlineShoppingCart className='text-2xl' />
