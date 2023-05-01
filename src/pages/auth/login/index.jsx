@@ -26,7 +26,7 @@ const Login = () => {
         </Link>
       </div>
       <div className="absolute inset-0  h-[100vh] bg-black-950 bg-opacity-60">
-        <Container className='flex justify-center items-center'>
+        <div className='flex justify-center items-center'>
           <form action="" className='w-[400px] mobileXL:w-[300px] rounded-md h-[500px] mt-12
            bg-[#ffffff88] shadow-md  shadow-black-800 p-2
            flex items-center justify-center flex-col mobileM:p-1
@@ -117,7 +117,7 @@ const Login = () => {
 
           </form>
 
-        </Container>
+        </div>
       </div>
     </div>
   )
