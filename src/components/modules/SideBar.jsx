@@ -36,7 +36,7 @@ const SideBar = ({ setShowSideBar, showSideBar }) => {
                 </Link>
                 <Link href={`/auth/login`}>
                     <li className=' ms-4 absolute bottom-2 ' >
-                        <Button className={` bg-pink-600 rounded-[20px] text-center  p-[0.15rem] pb-2 text-lg 
+                        <Button className={` bg-pink-600 rounded-[20px] text-center  p-[0.15rem] text-lg 
                             font-semibold text-white-50 w-[150px]
                             hover:bg-white-50 hover:border border-pink-600 transition ease-in-out duration-500 hover:text-white-950
                             `}>
