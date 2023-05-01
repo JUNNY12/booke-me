@@ -27,10 +27,7 @@ const Explore = () => {
         // </section>
         <div className="h-[250px] bg-bg-3 bg-cover relative">
             <div className="absolute inset-0  h-[250px] bg-black-950 bg-opacity-60">
-                <Container className='pt-20 text-white-50 flex h-[95vh] justify-center flex-col'>
-                    <Typography variants={1} className=' text-5xl mobileXL:text-3xl mb-6'>
-                        Indulge Your Passion for Reading
-                    </Typography>
+                <Container className='pt-20 text-white-50 flex h-[250px] justify-center flex-col'>
                     <p className='text-4xl text-center tabletXS:text-2xl'>Browse through our complete Library</p>
 
                     <div className='mt-4 text-center'>
