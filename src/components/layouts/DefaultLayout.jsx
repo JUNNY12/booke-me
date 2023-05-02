@@ -1,17 +1,17 @@
 import React from 'react'
 import Header from '../modules/Header'
 import Footer from '../modules/Footer'
-import { Container } from '../modules/Container'
+import { Container, TopHeader } from '../modules'
 
 const DefaultLayout = ({ children }) => {
     return (
-        <div>
+        <div className=' min-h-screen'>
             <Header />
-            <Container>
+            <TopHeader />
+            <div>
                 {children}
-            </Container>
+            </div>
             <Footer />
-
         </div>
     )
 }

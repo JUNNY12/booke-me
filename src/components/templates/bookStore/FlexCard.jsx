@@ -1,16 +1,16 @@
 import React from 'react'
 import { Card } from '@/components/modules'
 import Image from 'next/image'
-import { Button, Typography } from '@/components/elements'
 import { formatCurrency } from '@/utils'
+import { Button, Typography } from '@/components/elements'
 import { FiSend } from 'react-icons/fi'
 import { BsCartPlus } from 'react-icons/bs'
 
-const BookCard = ({ id, title, author, price, description, publication_year, genre, language, image }) => {
+const FlexCard = ({ id, title, author, price, description, publication_year, genre, language, image }) => {
     return (
-        <Card className={` w-[250px] flex-shrink-0 snap-start me-8 my-6`}>
+        <Card className={`me-6 w-[220px] tabletS:w-[280px] tabletXS:[300px] tabletXS:me-0 tabletS:my-4`}>
             <div className='h-[250px] w-full object-cover rounded-sm'>
-                <Image src={image} alt={title} width={200} height={300} className='w-full h-full object-cover rounded-sm' priority />
+                <Image src={image} alt={title} width={200} alt={title} height={300} className='w-full h-full object-cover rounded-sm' priority />
             </div>
 
             <div className=' text-center text-white-950 mt-4'>
@@ -46,4 +46,4 @@ const BookCard = ({ id, title, author, price, description, publication_year, gen
     )
 }
 
-export default BookCard
+export default FlexCard

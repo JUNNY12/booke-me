@@ -8,7 +8,7 @@ const Setup = () => {
     <FormProvider>
       <div className='bg-pink-400 h-screen '>
         <Typography variants={1} className={`text-center pt-8 text-3xl text-white-950 mobileXL:text-2xl`}>
-          Set up your account
+          Set up your Address
         </Typography>
         <div className='flex justify-center items-center'>
           <AccountSetup />

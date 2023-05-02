@@ -1,0 +1,9 @@
+{
+    "editor.fontSize": 14,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "workbench.tree.indent": 4,
+    "prettier.vueIndentScriptAndStyle": true,
+    "editor.detectIndentation": false
+}

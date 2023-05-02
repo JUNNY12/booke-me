@@ -21,7 +21,7 @@ const Header = () => {
 
 
     return (
-        <header className='text-white-950 px-10 py-6 tabletXS:px-4 relative bg-white-50'>
+        <header className='text-white-950 top-0 left-0 z-10 px-10 py-6 tabletXS:px-4 fixed w-full bg-white-50'>
             <div className={`${!showSideBar ? 'opacity-0 transition duration-500 ease-in-out' : 'opacity-100 transition duration-500 ease-in-out'}`}>
                 {
                     (isMobile && showSideBar) && <SideBar

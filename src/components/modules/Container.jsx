@@ -16,7 +16,7 @@ export const FlexContainer = ({children, className}) => {
 
 export const GridContainer = ({children, className}) => {
     return (
-        <section className={`${className} grid gap-8`}>
+        <section className={`${className} grid`}>
             {children}
         </section>
     )
