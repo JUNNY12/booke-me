@@ -10,7 +10,7 @@ const FlexCard = ({ id, title, author, price, description, publication_year, gen
     return (
         <Card className={`me-6 w-[220px] tabletS:w-[280px] tabletXS:[300px] tabletXS:me-0 tabletS:my-4`}>
             <div className='h-[250px] w-full object-cover rounded-sm'>
-                <Image src={image} alt={title} width={200} alt={title} height={300} className='w-full h-full object-cover rounded-sm' priority />
+                <Image src={image} alt={title} width={200}  height={300} className='w-full h-full object-cover rounded-sm' priority />
             </div>
 
             <div className=' text-center text-white-950 mt-4'>
