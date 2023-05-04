@@ -40,3 +40,19 @@ input[type=range]::-webkit-slider-runnable-track {
     border: none;
     background: transparent;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c13d60;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+    height: 5px;
+}

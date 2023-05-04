@@ -4,7 +4,7 @@ import { Input , Button} from '@/components/elements'
 
 const Search = () => {
   return (
-        <GridContainer className={` bg-white-50 grid-cols-4  laptopS:grid-cols-2 mobileXL:grid-cols-1 place-items-center mt-16 gap-3`}>
+        <GridContainer className={` bg-white-50 grid-cols-4  laptopS:grid-cols-2 mobileXL:grid-cols-1 place-items-center mt-4 p-16 gap-3`}>
             <div className='mb-2'>
                 <Input
                 placeholder={`Book Title`}

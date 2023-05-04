@@ -8,7 +8,7 @@ import { Rating } from '@/components/modules'
 const TopProducts = () => {
     return (
         <div>
-            <div className=' bg-white-50 h-full tabletS:w-full w-[220px] rounded-md p-4 mt-8'>
+            <div className=' bg-white-50 h-full tabletS:w-full w-[220px] rounded-md p-4 mt-4'>
                 <Typography variants={3} className={` text-xl text-white-950 mb-3`}>
                     Top Products
                 </Typography>
@@ -17,9 +17,9 @@ const TopProducts = () => {
                     {Books.slice(0 , 4).map((book) => {
                         const {id, title, price, image, rating} = book
                         return(
-                            <div key={id} className='mb-4 flex'>
+                            <div key={id} className='mb-2 flex'>
                                 <div className=' object-cover w-[80px] h-[80px] me-4'>
-                                    <Image src={image} height={100} width={100} priority className='w-full h-full object-cover' />
+                                    <Image src={image} height={100} width={100} alt={title} priority className='w-full h-full object-cover' />
                                 </div>
 
                                 <div>

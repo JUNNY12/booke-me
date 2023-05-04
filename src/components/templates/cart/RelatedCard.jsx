@@ -1,16 +1,17 @@
-import React from 'react'
-import { Card } from '@/components/modules'
-import Image from 'next/image'
-import { formatCurrency } from '@/utils'
-import { Button, Typography } from '@/components/elements'
+import { Card } from "@/components/modules"
+import { Typography, Button } from "@/components/elements"
+import Image from "next/image"
+import { formatCurrency } from "@/utils"
 import { FiSend } from 'react-icons/fi'
 import { BsCartPlus } from 'react-icons/bs'
 
-const FlexCard = ({ id, title, author, price, description, publication_year, genre, language, image }) => {
-    return (
-        <Card className={`me-6 w-[220px] tabletS:w-[280px] mb-6 tabletXS:[300px] tabletXS:me-0 tabletS:my-4`}>
+
+
+export const RelatedCard = ({image, title, author, price}) => {
+    return(
+        <Card className={` w-[250px] flex-shrink-0 snap-start me-6 my-6`}>
             <div className='h-[250px] w-full object-cover rounded-sm'>
-                <Image src={image} alt={title} width={200}  height={300}  className='w-full h-full object-cover rounded-sm' priority />
+                <Image src={image} alt={title} width={200} height={300} className='w-full h-full object-cover rounded-sm' priority />
             </div>
 
             <div className=' text-center text-white-950 mt-4'>
@@ -45,5 +46,3 @@ const FlexCard = ({ id, title, author, price, description, publication_year, gen
         </Card>
     )
 }
-
-export default FlexCard

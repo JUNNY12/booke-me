@@ -16,9 +16,8 @@ const Header = () => {
 
     const handleShowSideBar = () => {
         setShowSideBar(prev => !prev)
-     
-    }
 
+    }
 
     return (
         <header className='text-white-950 top-0 left-0 z-10 px-10 py-6 tabletXS:px-4 fixed w-full bg-white-50'>
@@ -30,7 +29,7 @@ const Header = () => {
                     />
                 }
             </div>
-            <nav className={`flex gap-x-40 justify-between items-center`}>
+            <nav className={`flex gap-x-40 justify-between items-center relative`}>
                 <div className='text-2xl font-bold mobileXL:text-xl text-pink-600'>Booke</div>
                 <ul className='flex text-xl tabletL:hidden'>
                     <Link href={`/`} className={` ${router.pathname == '/' ? ' text-pink-600 font-bold' : ''} `}>
@@ -57,15 +56,17 @@ const Header = () => {
                     </Link>
                 </ul>
 
-                <div className={` relative cursor-pointer tabletL:absolute right-[80px] ${showSideBar? "hidden" : 'block'}`}>
-                    <div className={`absolute top-[-10px] right-[-20px]
+                <Link href={`/cart`}>
+                    <div className={` relative cursor-pointer tabletL:absolute right-[100px] top-[5px] ${showSideBar ? "hidden" : 'block'}`}>
+                        <div className={`absolute top-[-10px] right-[-20px]
                          bg-pink-600 rounded-full w-[20px] h-[20px] text-white-50
                         text-xs flex justify-center items-center `}>0
+                        </div>
+                        <AiOutlineShoppingCart className='text-2xl' />
                     </div>
-                    <AiOutlineShoppingCart className='text-2xl' />
-                </div>
+                </Link>
 
-                <div className='text-2xl hidden tabletL:block'
+                <div className='text-2xl hidden tabletL:block absolute right-6 top-[5px]' 
                     onClick={handleShowSideBar}
                     title='Open Sidebar'
                 >

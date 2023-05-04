@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Typography = ({children, variants, className}) => {
+const Typography = ({children, variants, className, ...rest}) => {
     const Element = `h${variants}`
 
     if(variants < 1 || variants > 6) {
@@ -8,7 +8,7 @@ const Typography = ({children, variants, className}) => {
     }
 
   return (
-    <Element className={`${className}`}>{children}</Element>
+    <Element {...rest} className={`${className}`}>{children}</Element>
   )
 }
 

@@ -1,7 +1,7 @@
 
 export const Button = ({children, className, ...rest}) => {
     return (
-        <button className={`${className}`} {...rest}>{children}</button>
+        <button className={`${className} outline-pink-600`} {...rest}>{children}</button>
     )
 
 }

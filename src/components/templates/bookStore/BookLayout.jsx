@@ -11,9 +11,9 @@ const BookLayout = () => {
     // const {pageCount, paginatedData, handlePageClick, currentPage } = usePagination(4, Books)
 
     return (
-        <div>
-            <FlexContainer className={`mt-16 justify-center px-6 bg-white-100 tabletS: flex-col`}>
-                <div className=' '>
+        <div className=''>
+            <FlexContainer className={`mt-16 justify-center px-6 bg-white-100 tabletS:flex-col`}>
+                <div className=''>
                     <FlexProduct />
                 </div>
                 <div className=''>

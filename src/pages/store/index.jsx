@@ -5,12 +5,16 @@ import { BookLayout } from '@/components/templates/bookStore'
 
 
 const Store = () => {
-  return (
-    <DefaultLayout>
-      <Search />
-      <BookLayout />
-    </ DefaultLayout>
-  )
+    return (
+        <div className='bg-white-100'>
+            <DefaultLayout>
+
+                <Search />
+                <BookLayout />
+
+            </ DefaultLayout>
+        </div>
+    )
 }
 
 export default Store
