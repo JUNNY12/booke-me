@@ -3,7 +3,7 @@ import { FlexContainer } from '@/components/modules/Container';
 import BlogCard from './BlogCard';
 import Typography from '@/components/elements/Typography';
 
-const bookBlogPosts = [
+export const bookBlogPosts = [
     {
         id: 1,
         title: "The Top 10 Must-Read Books of 2021",
@@ -37,7 +37,7 @@ const bookBlogPosts = [
         title: "The Benefits of Reading: Why You Should Pick Up a Book Today",
         date: "2021-09-10",
         description: "An overview of the many benefits of reading, including improved cognitive function, reduced stress, and increased empathy and understanding of others.",
-       
+        image: '/images/post3.jpg'
     }
 ];
 

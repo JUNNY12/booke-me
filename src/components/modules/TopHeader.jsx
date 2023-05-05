@@ -27,8 +27,8 @@ const TopHeader = () => {
   });
 
   return (
-<div className="pt-16 tabletS:pt-8" >
-<nav className="bg-white-100 py-12">
+      <div className=" bg-white-100 mt-20 mb-8 h-[200px] tabletS:[h-50px] tabletS:mt-10 tabletS:-mb-8 flex flex-col justify-center items-center" >
+<nav className="">
       <Typography variants={1} className={`text-7xl text-center tabletS:text-4xl`}>
         {currentRoute}
       </Typography>

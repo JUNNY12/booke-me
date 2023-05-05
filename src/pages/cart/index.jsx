@@ -7,7 +7,7 @@ const Cart = () => {
         <div className=" bg-white-100">
             <DefaultLayout>
                 <CartContainer />
-               <div className="m-8 tabletL:mx-4 mt-20">
+               <div className="mx-8 tabletL:mx-4 mt-20">
                     <RelatedBooks />
                </div>
             </DefaultLayout>

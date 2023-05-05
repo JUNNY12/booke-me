@@ -7,13 +7,13 @@ export const Rating = ({ rating }) => {
                 return (
                     <span key={index}>
                         {rating > index ? (
-                            <div className=" text-yellow-400">
+                            <span className=" text-yellow-400">
                                 <AiFillStar />
-                            </div>
+                            </span>
                         ) : (
-                            <div>
+                            <span>
                                 <AiOutlineStar />
-                            </div>
+                            </span>
                         )}
                     </span>
                 )
