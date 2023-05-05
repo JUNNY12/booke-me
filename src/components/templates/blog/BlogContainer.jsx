@@ -5,7 +5,7 @@ import { bookBlogPosts } from '../home/Post'
 
 export const BlogContainer = () => {
     return (
-        <div className=' bg-white-50 p-8 tabletS:px-4 me-8 tabletS:me-0 tabletS: mb-6'>
+        <div className=' bg-white-50 p-8 tabletS:px-4 me-8 tabletS:me-0 tabletS: mb-6 rounded-md'>
             {
                 bookBlogPosts.slice(0, 3).map((post) => {
                     const { id, date, title, description, image } = post
