@@ -5,7 +5,8 @@ import Footer from "./Footer"
 import { Container, FlexContainer, GridContainer } from "./Container"
 import SideBar from "./SideBar"
 import TopHeader from "./TopHeader"
-import { Rating } from "./Rating"
+import { Rating,Rate } from "./Rating"
+
 
 export{
     Card,
@@ -16,5 +17,6 @@ export{
     FlexContainer,
     SideBar,
     TopHeader, 
-    Rating
+    Rating,
+    Rate
 }

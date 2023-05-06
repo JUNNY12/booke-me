@@ -5,12 +5,18 @@ import { formatCurrency } from '@/utils'
 import { Button, Typography } from '@/components/elements'
 import { FiSend } from 'react-icons/fi'
 import { BsCartPlus } from 'react-icons/bs'
+import Link from 'next/link'
 
 const FlexCard = ({ id, title, author, price, description, publication_year, genre, language, image }) => {
+
+    let slug;
+    if (title) {
+        slug = title
+    }
     return (
         <Card className={`me-6 w-[220px] tabletS:w-[280px] mb-6 tabletXS:[300px] tabletXS:me-0 tabletS:my-4`}>
             <div className='h-[250px] w-full object-cover rounded-sm'>
-                <Image src={image} alt={title} width={200}  height={300}  className='w-full h-full object-cover rounded-sm' priority />
+                <Image src={image} alt={title} width={200} height={300} className='w-full h-full object-cover rounded-sm' priority />
             </div>
 
             <div className=' text-center text-white-950 mt-4'>
@@ -27,12 +33,14 @@ const FlexCard = ({ id, title, author, price, description, publication_year, gen
                 </div>
             </div>
             <div className=' flex absolute bottom-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-                <Button className={`hover:bg-pink-600 transition ease-in-out duration-500 
-                w-[100px] inline-flex items-center hover:text-white-50 justify-center p-1
-                 rounded-tl-[20px] rounded-bl-[20px] border border-white-800`}>
-                    <span className='me-2'><FiSend /></span>
-                    <span>Details</span>
-                </Button>
+                <Link href={`/store/${slug}`}>
+                    <Button className={`hover:bg-pink-600 transition ease-in-out duration-500 
+                        w-[100px] inline-flex items-center hover:text-white-50 justify-center p-1
+                        rounded-tl-[20px] rounded-bl-[20px] border border-white-800`}>
+                        <span className='me-2'><FiSend /></span>
+                        <span>Details</span>
+                    </Button>
+                </Link>
                 <Button className={`hover:bg-pink-600 hover:text-white-50 transition ease-in-out duration-500
                  w-[100px] inline-flex items-center justify-center p-1
                  rounded-tr-[20px] rounded-br-[20px] border border-white-800`}>

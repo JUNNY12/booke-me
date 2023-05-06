@@ -5,8 +5,15 @@ import { Button, Typography } from '@/components/elements'
 import { formatCurrency } from '@/utils'
 import { FiSend } from 'react-icons/fi'
 import { BsCartPlus } from 'react-icons/bs'
+import Link from 'next/link'
 
 const BookCard = ({ id, title, author, price, description, publication_year, genre, language, image }) => {
+    let slug;
+
+    if (title) {
+        slug = title
+    }
+
     return (
         <Card className={` w-[250px] flex-shrink-0 snap-start me-8 my-6`}>
             <div className='h-[250px] w-full object-cover rounded-sm'>
@@ -27,12 +34,14 @@ const BookCard = ({ id, title, author, price, description, publication_year, gen
                 </div>
             </div>
             <div className=' flex absolute bottom-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-                <Button className={`hover:bg-pink-600 transition ease-in-out duration-500 
+               <Link href={`/store/${slug}`}>
+                    <Button className={`hover:bg-pink-600 transition ease-in-out duration-500 
                 w-[100px] inline-flex items-center hover:text-white-50 justify-center p-1
                  rounded-tl-[20px] rounded-bl-[20px] border border-white-800`}>
-                    <span className='me-2'><FiSend /></span>
-                    <span>Details</span>
-                </Button>
+                        <span className='me-2'><FiSend /></span>
+                        <span>Details</span>
+                    </Button>
+               </Link>
                 <Button className={`hover:bg-pink-600 hover:text-white-50 transition ease-in-out duration-500
                  w-[100px] inline-flex items-center justify-center p-1
                  rounded-tr-[20px] rounded-br-[20px] border border-white-800`}>
