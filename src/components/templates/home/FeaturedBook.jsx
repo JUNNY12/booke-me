@@ -2,7 +2,7 @@ import Typography from '@/components/elements/Typography'
 import { Container, FlexContainer } from '@/components/modules/Container'
 import React from 'react'
 import Image from 'next/image'
-import {Button} from '@/components/elements/Button'
+import { Button } from '@/components/elements/Button'
 
 const FeaturedBook = () => {
     return (
@@ -42,12 +42,16 @@ const FeaturedBook = () => {
                     </div>
                 </div>
 
-                <div className=' w-[300px] h-[400px] object-cover rounded-sm mb-8 order-1'>
-                    <Image src={`/images/simplified js.jpg`} width={300} height={300} priority alt='Ebenezer don' className='w-full h-full object-cover rounded-sm' />
+                <div className=' w-[300px] h-[400px] relative rounded-sm mb-8 order-1'>
+                    <Image src={`/images/simplified js.jpg`} fill={true} priority={true}
+                        sizes='(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw'
+                        style={{ objectFit: 'cover' }} alt='Ebenezer don' className='rounded-sm' />
                 </div>
 
-                <div className=' w-[300px] h-[400px] object-cover rounded-sm mb-8 order-last'>
-                    <Image src='/images/simplified-javascript.jpg' width={300} height={300} priority alt='Ebenezer don' className='w-full h-full object-cover rounded-sm' />
+                <div className=' w-[300px] h-[400px] relative object-cover rounded-sm mb-8 order-last'>
+                    <Image src='/images/simplified-javascript.jpg' fill={true} priority={true}
+                        sizes='(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw'
+                        style={{ objectFit: 'cover' }} alt='Ebenezer don' className='rounded-sm' />
                 </div>
             </FlexContainer>
         </Container>

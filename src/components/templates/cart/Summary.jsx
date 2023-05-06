@@ -14,14 +14,14 @@ export const Summary = () => {
             </div>
 
             <div className="mb-4 text-xl mobileL:text-lg">
-              <Typography variants={3} className={`mb-4`}>
+                <Typography variants={3} className={`mb-4`}>
                     Delivery
-              </Typography>
+                </Typography>
                 <select className="p-2 outline-pink-600 w-full mobileL:text-sm">
                     <option>Select Delivery Method</option>
                     <option>Delivery {formatCurrency(1.2)}</option>
                     <option>Pickup {formatCurrency(0)}</option>
-              </select>
+                </select>
             </div>
 
             <div className="flex mb-4 text-xl mobileL:text-lg">
@@ -37,20 +37,29 @@ export const Summary = () => {
                 <p>WE ACCEPT:</p>
 
                 <div className="mt-2 flex items-center">
-                    <div className='w-[100px] h-[50px] me-4'>
-                        <Image src={`/images/visa.svg`} height={50} width={50} alt='card' className="object-cover w-full h-full" />
+                    <div className='w-[100px] relative h-[50px] me-4'>
+                        <Image src={`/images/visa.svg`}
+                            fill={true} priority={true} style={{ objectFit: 'cover' }}
+                            sizes='(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw'
+                            alt='card' className="" />
                     </div>
 
-                    <div className='w-[100px] h-[50px] me-4'>
-                        <Image src={`/images/verve.svg`} height={50} width={50} alt='card' className="object-cover w-full h-full" />
+                    <div className='w-[100px] relative h-[50px] me-4'>
+                        <Image src={`/images/verve.svg`}
+                            fill={true} priority={true} style={{ objectFit: 'cover' }}
+                            sizes='(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw'
+                            alt='card' className="" />
                     </div>
 
-                    <div className='w-[100px] h-[50px] me-4'>
-                        <Image src={`/images/mastercard.svg`} height={50} width={50} alt='card' className="object-cover w-full h-full" />
+                    <div className='w-[100px] relative h-[50px] me-4'>
+                        <Image src={`/images/mastercard.svg`}
+                            fill={true} priority={true} style={{ objectFit: 'cover' }}
+                            sizes='(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw'
+                            alt='card' className="" />
                     </div>
                 </div>
             </div>
-            
+
         </div>
     )
 }

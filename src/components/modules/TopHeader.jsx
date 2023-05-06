@@ -29,7 +29,7 @@ const TopHeader = () => {
     });
 
     return (
-        <div className=" bg-white-100 mt-20 mb-8 h-[200px] tabletS:mt-10 tabletS:-mb-8 flex flex-col justify-center items-center">
+        <div className=" bg-white-100 mt-20 mb-8 h-[200px] px-4 tabletS:mt-10 tabletS:-mb-8 flex flex-col justify-center items-center">
             <nav className="">
                 <Typography
                     variants={1}

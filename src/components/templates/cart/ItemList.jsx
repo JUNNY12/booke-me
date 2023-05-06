@@ -7,12 +7,14 @@ export const ItemList = ({ id, image, title, author, price }) => {
     return (
         <div className="mb-6 flex items-center mobileXL:flex-col">
             <div className="flex w-1/2 tabletL:w-4/5 mobileXL:w-full">
-                <div className="w-[100px] h-[150px] mobileXL:h-[100px] me-8 mobileXL:me-2 object-cover">
-                    <Image src={image} height={100} alt={title} width={100}  className="object-cover w-full h-full" />
+                <div className="w-[100px] h-[150px] relative mobileXL:h-[100px] me-8 mobileXL:me-2">
+                    <Image src={image} fill={true} priority={true}
+                        sizes='(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw'
+                    alt={title} style={{objectFit:'cover'}}  className="" />
                 </div>
 
                 <div>
-                    <Typography variant={3} className="text-white-950 font-bold">
+                    <Typography variants={3} className="text-white-950 font-bold">
                         {title}
                     </Typography>
 

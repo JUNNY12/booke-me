@@ -15,8 +15,10 @@ const FlexCard = ({ id, title, author, price, description, publication_year, gen
     }
     return (
         <Card className={`me-6 w-[220px] tabletS:w-[280px] mb-6 tabletXS:[300px] tabletXS:me-0 tabletS:my-4`}>
-            <div className='h-[250px] w-full object-cover rounded-sm'>
-                <Image src={image} alt={title} width={200} height={300} className='w-full h-full object-cover rounded-sm' priority />
+            <div className='h-[250px] relative rounded-sm'>
+                <Image src={image} alt={title} fill={true}
+                sizes='(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw'
+                style={{objectFit:'cover'}} className='rounded-sm' priority={true} />
             </div>
 
             <div className=' text-center text-white-950 mt-4'>

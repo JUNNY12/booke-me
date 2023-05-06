@@ -13,9 +13,13 @@ export const RecentPosts = () => {
                 {
                     bookBlogPosts.map((post) => {
                         const {id, title} = post
+                        let slug;
+                        if(title) {
+                            slug = title
+                        }
                         return(
                             <div className="mb-4 text-lg" key={id}>
-                                <Link href={`/blog/${id}`} className="hover:underline hover:text-pink-600 transition duration-500 ease-in-out"  key={id}>
+                                <Link href={`/blog/${slug}`} className="hover:underline hover:text-pink-600 transition duration-500 ease-in-out"  key={id}>
                                     {title.substring(0, 40) + "..."}
                                 </Link>
                             </div>

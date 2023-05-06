@@ -3,7 +3,7 @@ import Header from '../modules/Header'
 import Footer from '../modules/Footer'
 import { Container, TopHeader } from '../modules'
 
-const DefaultLayout = ({ children }) => {
+export const DefaultLayout = ({ children }) => {
     return (
         <div className=' min-h-screen'>
             <Header />
@@ -15,5 +15,3 @@ const DefaultLayout = ({ children }) => {
         </div>
     )
 }
-
-export default DefaultLayout

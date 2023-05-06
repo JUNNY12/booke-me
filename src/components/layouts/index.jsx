@@ -1,1 +1,2 @@
-export * from "@layouts/DefaultLayout"
+export * from "./DefaultLayout"
+export * from "./BlogLayout"

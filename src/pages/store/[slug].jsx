@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { Books } from "../../components/templates/home/PopularBooks";
-import DefaultLayout from "@/components/layouts/DefaultLayout";
+import { DefaultLayout } from "@/components/layouts";
 import Image from "next/image";
 import { Typography, Button, Input } from "@/components/elements";
 import { Rating, Rate } from "@/components/modules";
@@ -58,8 +58,12 @@ const Book = () => {
 
                     {/* Book Image and price */}
                     <div className=" p-12 tabletS:tabletS:p-4 rounded-md flex justify-center tabletS:flex-col items-center relative">
-                        <div className="w-[400px] h-[500px] tabletS:w-[300px] tabletS:h-[300px] mobileXL:w-[250px] mobileXL:h-[250px] object-cover me-8 tabletS:me-0">
-                            <Image src={book.image} alt={book.title} height={400} width={400} priority className=" h-full w-full object-cover" />
+                        <div className="w-[400px] h-[500px] relative tabletS:w-[300px] tabletS:h-[300px] mobileXL:w-[250px] mobileS:w-full mobileXL:h-[250px] object-cover me-8 tabletS:me-0">
+                            <Image src={book.image}
+                                sizes='(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw'
+                                priority={true}
+                                style={{objectFit:'cover'}}
+                            alt={book.title} fill={true} className="" />
                         </div>
 
                         <div className=" tabletS:flex tabletS:items-center tabletS:justify-center tabletS:flex-col">
@@ -76,12 +80,12 @@ const Book = () => {
                                     {formatCurrency(book.price)}
                                 </div>
                                 <div className="inline-flex items-center justify-center text-2xl h-[50px] w-full">
-                                    <Button title='Decrease' arial-label='increase'>
+                                    <Button title='Decrease' className={`px-1 hover:text-pink-600`} arial-label='increase'>
                                         <FaMinus />
                                     </Button>
 
-                                    <span className="mx-2">1</span>
-                                    <Button title='Increase' arial-label='increase'>
+                                    <span className="mx-2 ">1</span>
+                                    <Button title='Increase' className={`px-1 hover:text-pink-600`} arial-label='increase'>
                                         <FaPlus />
                                     </Button>
                                 </div>
