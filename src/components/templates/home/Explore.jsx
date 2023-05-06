@@ -2,7 +2,7 @@ import { Button } from '@/components/elements/Button'
 import React from 'react'
 import { AiOutlineArrowRight } from "react-icons/ai"
 import { Container } from '@/components/modules/Container'
-import Typography from '@/components/elements/Typography'
+import Link from 'next/link'
 
 
 const Explore = () => {
@@ -13,12 +13,14 @@ const Explore = () => {
                     <p className='text-4xl text-center tabletXS:text-2xl'>Browse through our complete Library</p>
 
                     <div className='mt-4 text-center'>
-                        <Button className={`bg-pink-600 text-white-50 transition ease-in-out duration-500 font-semibold
-                    w-[180px] inline-flex items-center hover:text-white-950 justify-center p-2
-                    rounded-[20px] hover:bg-white-50`}>
-                            <span className='me-3'>Browse Collection</span>
-                            <span><AiOutlineArrowRight /></span>
-                        </Button>
+                        <Link href={`/store`}>
+                            <Button className={`bg-pink-600 text-white-50 transition ease-in-out duration-500 font-semibold
+                                w-[180px] inline-flex items-center hover:text-white-950 justify-center p-2
+                                rounded-[20px] hover:bg-white-50`}>
+                                <span className='me-3'>Browse Collection</span>
+                                <span><AiOutlineArrowRight /></span>
+                            </Button>
+                        </Link>
                     </div>
                 </Container>
             </div>

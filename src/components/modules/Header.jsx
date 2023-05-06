@@ -30,7 +30,9 @@ const Header = () => {
                 }
             </div>
             <nav className={`flex gap-x-40 justify-between items-center relative`}>
-                <div className='text-2xl font-bold mobileXL:text-xl text-pink-600'>Booke</div>
+                <Link href={`/`}>
+                    <div className='text-2xl font-bold mobileXL:text-xl text-pink-600'>Booke</div>
+                </Link>
                 <ul className='flex text-xl tabletL:hidden'>
                     <Link href={`/`} className={` ${router.pathname == '/' ? ' text-pink-600 font-bold' : ''} `}>
                         <li className='me-8 hover:text-pink-600 text-center transition duration-500 ease-in-out'>Home</li>
@@ -66,7 +68,7 @@ const Header = () => {
                     </div>
                 </Link>
 
-                <div className='text-2xl hidden tabletL:block absolute right-6 top-[5px]' 
+                <div className='text-2xl hidden tabletL:block absolute right-6 top-[5px]'
                     onClick={handleShowSideBar}
                     title='Open Sidebar'
                 >
