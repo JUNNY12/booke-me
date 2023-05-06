@@ -1,5 +1,5 @@
 import React from 'react'
-import DefaultLayout from '@/components/layouts/DefaultLayout'
+import { DefaultLayout } from '@/components/layouts'
 
 const Contact = () => {
   return (
