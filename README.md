@@ -1,38 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BOOKE ME
 
-## Getting Started
+This is an ecommerce web application built with Next.js and Firebase. The application allows users to browse and purchase books online.
 
-First, run the development serv:
+## Features
+- User authentication and authorization
+- Book browsing and filtering
+- Shopping cart functionality
+- Checkout process
+- Submitting review about a book
 
-```bash
-npm run dev
-# or
+## Requirements
+- Node.js (v14.17.6 or higher)
+- Yarn (v1.22.11 or higher)
+- React (v18.2.0 or higher)
+- next (v13.3.2 or higher)
+
+
+## Installation
+1. Clone the repository
+```
+git clone https://github.com/JUNNY12/booke-me.git
+
+```
+2. Install dependencies
+
+```
+cd <REPOSITORY-NAME>
+Yarn install
+
+```
+3. Create a new Firebase project and add a web app to it.
+
+4. Copy the Firebase configuration to src/firebase/firebase.ts file.
+
+Start the development server:
+
+5. Start the React App
+
+```
 yarn dev
-# or
-pnpm dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Open the app in your browser at
+ ``` 
+http://localhost/3000/
+ 
+ ```
+# Usage
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Open your browser and go to http://localhost/3000/
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Authentication
+- To create an account, click the "Register" button on the navbar and provide your details.
+- To log in, click the "Login" button and enter your email and password.
+- To log out, click the "Log out" button.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Book browsing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Navigate to the store page and browse books by category or author.
+- Use the search bar to search for books 
+- Click on "Details" book card to view the book details.
 
-## Learn More
+## Shopping Cart
 
-To learn more about Next.js, take a look at the following resources:
+- Click the "Add to cart" button on a book card to add the book to your cart.
+- Use the cart icon on the navbar to view your cart and make changes to the cart items.
+- Click the "Checkout" button to proceed to the checkout process.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Checkout
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Update your shipping address and billing address on the checkout page.
+- Review your order summary and click the "Place order" button to complete the order.
 
-## Deploy on Vercel
+# Technology Used
+- Next Js
+- Firebase
+- Tailwind CSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please open an issue or pull request for any bug fixes or feature requests.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License 
+This project is licensed under the MIT License - see the [MIT LICENSE](LICENSE) for details.
