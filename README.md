@@ -2,6 +2,8 @@
 
 This is an ecommerce web application built with Next.js and Firebase. The application allows users to browse and purchase books online.
 
+# Preview 
+![Preview Image](preview.png)
 ## Features
 - User authentication and authorization
 - Book browsing and filtering
