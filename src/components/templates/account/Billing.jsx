@@ -9,7 +9,7 @@ const Billing = () => {
 
     return (
         <div>
-            <div className='mb-3'>
+            <div className='mb-4'>
                 <Input
                     required
                     name='billFirstName'
@@ -17,11 +17,11 @@ const Billing = () => {
                     value={data.billFirstName}
                     type={`text`}
                     placeholder={`First Name`}
-                    className={`bg-[#ffffff88] w-full h-[35px] rounded-tr-sm rounded-br-sm indent-4
+                    className={`bg-white-50 w-full h-[40px] text-white-950 rounded-tr-sm rounded-br-sm indent-4
                         placeholder:text-white-950`}
                 />
             </div>
-            <div className='mb-3'>
+            <div className='mb-4'>
                 <Input
                     required
                     type={`text`}
@@ -29,11 +29,37 @@ const Billing = () => {
                     onChange={handleChange}
                     value={data.billLastName}
                     placeholder={`Last Name`}
-                    className={`bg-[#ffffff88] w-full h-[35px] rounded-tr-sm rounded-br-sm indent-4
+                    className={`bg-white-50 w-full h-[40px] text-white-950 rounded-tr-sm rounded-br-sm indent-4
                         placeholder:text-white-950`}
                 />
             </div>
-            <div className='mb-3'>
+
+            <div className='mb-4'>
+                <Input
+                    required
+                    type={`number`}
+                    name='billPhoneNumber'
+                    onChange={handleChange}
+                    value={data.billPhoneNumber}
+                    placeholder={`Phone Number`}
+                    className={`bg-white-50 w-full h-[40px] text-white-950 rounded-tr-sm rounded-br-sm indent-4
+                        placeholder:text-white-950`}
+                />
+            </div>
+
+            <div className='mb-4'>
+                <Input
+                    required
+                    type={`email`}
+                    name='billEmail'
+                    onChange={handleChange}
+                    value={data.billEmail}
+                    placeholder={`Email Address`}
+                    className={`bg-white-50 w-full h-[40px] text-white-950 rounded-tr-sm rounded-br-sm indent-4
+                        placeholder:text-white-950`}
+                />
+            </div>
+            <div className='mb-4'>
                 <Input
                     required
                     type={`text`}
@@ -41,11 +67,11 @@ const Billing = () => {
                     onChange={handleChange}
                     value={data.billAddress}
                     placeholder={`Address`}
-                    className={`bg-[#ffffff88] w-full h-[35px] rounded-tr-sm rounded-br-sm indent-4
+                    className={`bg-white-50 w-full h-[40px] text-white-950 rounded-tr-sm rounded-br-sm indent-4
                         placeholder:text-white-950`}
                 />
             </div>
-            <div className='mb-3'>
+            <div className='mb-4'>
                 <Input
                     required
                     type={`text`}
@@ -53,30 +79,30 @@ const Billing = () => {
                     onChange={handleChange}
                     value={data.billCity}
                     placeholder={`City`}
-                    className={`bg-[#ffffff88] w-full h-[35px] rounded-tr-sm rounded-br-sm indent-4
+                    className={`bg-white-50 w-full h-[40px] text-white-950 rounded-tr-sm rounded-br-sm indent-4
                         placeholder:text-white-950`}
                 />
             </div>
-            <div className='mb-3'>
-                    <select
-                        required
-                        id=""
-                        name='billState'
-                        onChange={handleChange}
-                        value={data.billState}
-                        className={`bg-[#ffffff88] w-full h-[35px] rounded-tr-sm rounded-br-sm indent-4
+            <div className='mb-4'>
+                <select
+                    required
+                    id=""
+                    name='billState'
+                    onChange={handleChange}
+                    value={data.billState}
+                    className={`bg-white-50 text-white-950 w-full h-[40px] text-white-950 rounded-tr-sm rounded-br-sm indent-4
                         placeholder:text-white-950 outline-none`}
-                    >
-                        <option >Select State</option>
-                        {
-                            statesInNigeria.map((state, index) => (
-                                <option key={index} value={state}>{state}</option>
-                            ))
-                        }
-                    </select>
-                </div>
-          
-            <div className='mb-3'>
+                >
+                    <option >Select State</option>
+                    {
+                        statesInNigeria.map((state, index) => (
+                            <option key={index} value={state}>{state}</option>
+                        ))
+                    }
+                </select>
+            </div>
+
+            <div className='mb-4'>
                 <Input
                     required
                     name='billZip'
@@ -84,11 +110,11 @@ const Billing = () => {
                     value={data.billZip}
                     type={`number`}
                     placeholder={`Zip Code`}
-                    className={`bg-[#ffffff88] w-full h-[35px] rounded-tr-sm rounded-br-sm indent-4
+                    className={`bg-white-50 w-full h-[40px] text-white-950 rounded-tr-sm rounded-br-sm indent-4
                         placeholder:text-white-950`}
                 />
             </div>
-           
+
         </div>
     )
 }
