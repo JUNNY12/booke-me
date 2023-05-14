@@ -5,11 +5,13 @@ const FormContext = createContext({});
 export const FormProvider = ({ children }) => {
     const title = {
         0: "Billing Information",
-        1: "Shipping Information",
+        1: "Billing Information",
+        2: "Shipping Information",
+        3: "Shipping Information"
     }
 
     const [step, setStep] = useState(0);
-    const numSteps = 1
+    const numSteps = 3
 
     const [data, setData] = useState({
         billFirstName: "",
@@ -30,6 +32,7 @@ export const FormProvider = ({ children }) => {
         shipState: "",
         shipZip: "",
     });
+
 
     useEffect(() => {
         if (data.sameAsBilling) {
@@ -81,17 +84,25 @@ export const FormProvider = ({ children }) => {
         step === Object.keys(title).length - 1
 
     //checks if all billing inputs are filled
-    const canNextPage = Object.keys(data)
+    const canNextPage = Object.keys(data).slice(0, 4)
         .filter(key => key.startsWith('bill')).map(key => data[key]).every(Boolean)
+
+    const canNextPage2 = Object.keys(data).slice(4, 8)
+        .filter(key => key.startsWith('bill')).map(key => data[key]).every(Boolean)
+
+    const canNextPage3 = Object.keys(data).slice(9, 12)
+        .filter(key => key.startsWith('ship')).map(key => data[key]).every(Boolean)
+
+
 
 
     //disables prev and next buttons
     const disablePrev = step === 0
     const disableNext = (
-        (step === Object.keys(title).length - 1) || (step === 0 && !canNextPage)
-    
+        (step === Object.keys(title).length - 1) || (step === 0 && !canNextPage) || (step === 1 && !canNextPage2) || (step === 2 && !canNextPage3)
+
     )
-    
+
     //hides prev and next buttons
     const prevHide = step === 0 && 'hidden'
     const nextHide = step === Object.keys(title).length - 1 && 'hidden'

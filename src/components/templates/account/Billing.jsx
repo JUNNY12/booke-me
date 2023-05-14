@@ -3,7 +3,7 @@ import { Input } from '@/components/elements'
 import { useFormContext } from '@/hooks'
 import { statesInNigeria } from '@/constants'
 
-const Billing = () => {
+export const Billing1 = () => {
     const { data, handleChange, step } = useFormContext()
     console.log(step)
 
@@ -59,6 +59,15 @@ const Billing = () => {
                         placeholder:text-white-950`}
                 />
             </div>
+        </div>
+    )
+}
+
+export const Billing2 = () => {
+    const { data, handleChange} = useFormContext()
+
+    return (
+        <div>
             <div className='mb-4'>
                 <Input
                     required
@@ -90,7 +99,7 @@ const Billing = () => {
                     name='billState'
                     onChange={handleChange}
                     value={data.billState}
-                    className={`bg-white-50 text-white-950 w-full h-[40px] text-white-950 rounded-tr-sm rounded-br-sm indent-4
+                    className={`bg-white-50 w-full h-[40px] text-white-950 rounded-tr-sm rounded-br-sm indent-4
                         placeholder:text-white-950 outline-none`}
                 >
                     <option >Select State</option>
@@ -114,9 +123,6 @@ const Billing = () => {
                         placeholder:text-white-950`}
                 />
             </div>
-
         </div>
     )
 }
-
-export default Billing

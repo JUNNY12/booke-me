@@ -21,10 +21,10 @@ const RegisterForm = () => {
 
     return (
         <section className='flex tabletM:flex-col'>
-            <div className='relative h-screen w-full tabletM:h-[80px]'>
+            <div className='relative h-screen w-full tabletM:h-[150px]'>
                 <div className=' absolute left-1/2 top-1/2 text-center w-full transform -translate-x-1/2 -translate-y-1/2 z-20'>
                     <Typography variants={3}>
-                        <span className='text-5xl tabletM:text-3xl mobileXL:text-xl font-bold text-white-50'>Let's get started</span>
+                        <span className='text-5xl tabletM:text-3xl mobileXL:text-2xl font-bold text-white-50'>Let's get started</span>
                     </Typography>
                 </div>
                 <div className='absolute top-0 left-0 w-full h-full tabletM:h[70px] bg-[#00000088] z-10'></div>

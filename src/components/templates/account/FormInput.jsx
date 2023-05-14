@@ -1,13 +1,15 @@
 import React from 'react'
 import { useFormContext } from '@/hooks'
-import { Billing, Shipping} from '.'
+import {Billing1,Billing2 ,Shipping1, Shipping2} from '.'
 
 const FormInput = () => {
     const {step} = useFormContext()
 
     const renderStep =  {
-        0: <Billing />,
-        1: <Shipping />
+        0: <Billing1 />,
+        1: <Billing2 />,
+        2: <Shipping1 />,
+        3: <Shipping2 />    
     }
 
     const content = (
