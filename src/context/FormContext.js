@@ -56,6 +56,8 @@ export const FormProvider = ({ children }) => {
                 shipCity: "",
                 shipState: "",
                 shipZip: "",
+                shipEmail: "",
+                shipPhoneNumber: "",
             }))
         }
     }, [data.sameAsBilling])
@@ -75,6 +77,7 @@ export const FormProvider = ({ children }) => {
         }))
     }
 
+    console.log(Object.keys(data).slice(9, 13))
     const {
         sameAsBilling,
         ...requiredInputs } = data
@@ -90,8 +93,10 @@ export const FormProvider = ({ children }) => {
     const canNextPage2 = Object.keys(data).slice(4, 8)
         .filter(key => key.startsWith('bill')).map(key => data[key]).every(Boolean)
 
-    const canNextPage3 = Object.keys(data).slice(9, 12)
+    const canNextPage3 = Object.keys(data).slice(9, 13)
         .filter(key => key.startsWith('ship')).map(key => data[key]).every(Boolean)
+
+        console.log(canNextPage3)
 
 
 

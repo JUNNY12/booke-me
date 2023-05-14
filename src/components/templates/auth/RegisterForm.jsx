@@ -21,7 +21,7 @@ const RegisterForm = () => {
 
     return (
         <section className='flex tabletM:flex-col'>
-            <div className='relative h-screen w-full tabletM:h-[150px]'>
+            <div className='relative h-screen w-full tabletM:h-[100px]'>
                 <div className=' absolute left-1/2 top-1/2 text-center w-full transform -translate-x-1/2 -translate-y-1/2 z-20'>
                     <Typography variants={3}>
                         <span className='text-5xl tabletM:text-3xl mobileXL:text-2xl font-bold text-white-50'>Let's get started</span>
@@ -33,7 +33,7 @@ const RegisterForm = () => {
             <div className="h-[100vh] tabletM:h-max bg-white-100 bg-cover relative w-full px-4 py-3">
                 <div >
                     <Link href={`/`}>
-                        <Button className='w-[150px]  p-2
+                        <Button className='w-[100px]  p-1
                       rounded-sm bg-pink-600 text-white-50 font-semibold  z-10'>Back Home</Button>
                     </Link>
                 </div>
@@ -51,7 +51,7 @@ const RegisterForm = () => {
                         </Typography>
 
                         <div className='mb-4 flex items-center '>
-                            <div className='h-[45px] w-[45px] rounded-tl-sm flex items-center justify-center text-3xl
+                            <div className='h-[40px] w-[45px] rounded-tl-sm flex items-center justify-center text-3xl
                             rounded-bl-sm  bg-white-50'>
                                 <AiOutlineMail className='text-white-950' />
                             </div>
@@ -60,7 +60,7 @@ const RegisterForm = () => {
                                     type='email'
                                     required
                                     placeholder={`Email`}
-                                    className={`bg-white-50 w-[255px] mobileM:w-[205px] h-[45px] rounded-tr-sm rounded-br-sm 
+                                    className={`bg-white-50 w-[255px] mobileM:w-[205px] h-[40px] rounded-tr-sm rounded-br-sm 
                                     indent-4 placeholder:text-white-950
                                   `}
                                 />
@@ -68,12 +68,12 @@ const RegisterForm = () => {
                         </div>
 
                         <div className='mb-4 flex items-center'>
-                            <div className='h-[45px] w-[45px] rounded-tl-sm flex items-center justify-center text-xl
+                            <div className='h-[40px] w-[45px] rounded-tl-sm flex items-center justify-center text-xl
                             rounded-bl-sm   bg-white-50'>
                                 <FaKey className='text-white-950' />
                             </div>
                             <div className='relative'>
-                                <div onClick={handlePasswordVisibility} className='absolute top-4 right-4'>
+                                <div onClick={handlePasswordVisibility} className='absolute top-3 right-4'>
                                     {
                                         passwordVisibility ?
                                             <FiEyeOff />
@@ -85,14 +85,14 @@ const RegisterForm = () => {
                                     required
                                     type={inputType}
                                     placeholder={`Password`}
-                                    className={`bg-white-50 w-[255px] mobileM:w-[205px] h-[45px] rounded-tr-sm rounded-br-sm indent-4
+                                    className={`bg-white-50 w-[255px] mobileM:w-[205px] h-[40px] rounded-tr-sm rounded-br-sm indent-4
                                  placeholder:text-white-950`}
                                 />
                             </div>
                         </div>
 
                         <Button className={`bg-white-50 w-[300px]  mobileM:w-[250px]  shadow-md shadow-black-600
-                        p-3 font-bold text-pink-600 rounded-[40px]
+                        p-2 font-bold text-pink-600 rounded-[40px]
                         `}>
                             Register
                         </Button>
@@ -107,7 +107,7 @@ const RegisterForm = () => {
 
                         <Button className={` w-[300px] mobileM:w-[250px] shadow-md shadow-black-600
                         bg-white-50 transition duration-300 ease-in-out
-                        p-3 font-bold text-pink-600 rounded-[40px] inline-flex items-center justify-center`}>
+                        p-2 font-bold text-pink-600 rounded-[40px] inline-flex items-center justify-center`}>
                             <span> <Image src='/icons/icons8-google.svg' width={25} height={25} /></span>
                             <span className='ms-2'>Sign up with Google</span>
                         </Button>

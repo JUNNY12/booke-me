@@ -5,7 +5,6 @@ import { statesInNigeria } from '@/constants'
 
 export const Billing1 = () => {
     const { data, handleChange, step } = useFormContext()
-    console.log(step)
 
     return (
         <div>

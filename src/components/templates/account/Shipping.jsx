@@ -54,7 +54,7 @@ export const Shipping1 = () => {
                     <Input
                         required
                         disabled={data.sameAsBilling}
-                        name='shipLastName'
+                        name='shipPhoneNumber'
                         onChange={handleChange}
                         value={data.shipPhoneNumber}
                         type={`number`}
@@ -85,7 +85,7 @@ export const Shipping1 = () => {
 }
 
 export const Shipping2 = () => {
-    
+
     const { data, handleChange } = useFormContext()
 
     return (
