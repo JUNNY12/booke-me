@@ -47,7 +47,7 @@ const AccountSetup = () => {
                 </div>
                 <div>
                     <Typography variants={1} className={`text-center text-lg text-white-50 mb-2`}>
-                       Step {step} of {numSteps}
+                        Step {step} of {numSteps}
                     </Typography>
 
                 </div>
@@ -58,21 +58,27 @@ const AccountSetup = () => {
 
                 <FormInput />
 
-                <div className=''>
+                <div className='flex justify-between'>
+
                     <Button
                         className={`${prevHide} w-[90px] cursor-pointer me-8 bg-white-50  p-1 transition duration-500 ease-in-out
-            rounded-sm text-white-950 font-semibold  `}
+                        rounded-sm text-white-950 font-semibold  `}
                         type={`button`} onClick={handlePrev} disabled={disablePrev}> Prev </Button>
 
                     <Button
                         className={`${nextHide} w-[90px] text-white-950 bg-white-50 cursor-pointer  p-1 transition duration-500 ease-in-out
-            rounded-sm font-semibold ${disableNext ? 'opacity-20' : ' opacity-100'}  `}
+                         rounded-sm font-semibold ${disableNext ? 'opacity-20' : ' opacity-100'}  `}
                         type={`button`} disabled={disableNext} onClick={handleNext} > Next </Button>
 
                     <Button
                         className={`${submitHide} w-[90px] bg-white-50  p-1 transition duration-500 ease-in-out
-            rounded-sm text-white-950 font-semibold ${!canSubmit ? 'opacity-20' : 'opacity-100'} `}
+                         rounded-sm text-white-950 font-semibold ${!canSubmit ? 'opacity-20' : 'opacity-100'} `}
                         type='submit' disabled={!canSubmit} onClick={handleSubmit}> Submit </Button>
+
+                    {
+                        step === 0 &&
+                        <Button className={`bg-white-50 rounded-sm w-[90px] p-1 text-white-950`}>Skip</Button>
+                    }
                 </div>
 
             </form>

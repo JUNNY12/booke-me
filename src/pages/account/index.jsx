@@ -6,7 +6,7 @@ import { sayGreetings } from '@/utils'
 const Account = () => {
   return (
     <AccountLayout>
-        <Typography variants={3} className='text-2xl font-bold mb-6'>
+        <Typography variants={3} className='text-2xl font-bold mb-4'>
             Account
         </Typography>
 
