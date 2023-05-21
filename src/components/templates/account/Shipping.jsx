@@ -1,33 +1,33 @@
-import React from 'react'
-import { Input } from '@/components/elements'
-import { useFormContext } from '@/hooks'
-import { statesInNigeria } from '@/constants'
+import React from 'react';
+import { Input } from '@/components/elements';
+import { useFormContext } from '@/hooks';
+import { statesInNigeria } from '@/constants';
 
 export const Shipping1 = () => {
-
-    const { data, handleChange } = useFormContext()
+    const { data, handleChange } = useFormContext();
 
     return (
         <>
-
-            <div className='mt-3 mb-4'>
+            <div className="mt-3 mb-4">
                 <input
-                    id='check'
+                    id="check"
                     type="checkbox"
-                    name='sameAsBilling'
+                    name="sameAsBilling"
                     onChange={handleChange}
                     checked={data.sameAsBilling}
                 />
-                <label htmlFor="check" className='ms-3'>Same as Billing Address</label>
+                <label htmlFor="check" className="ms-3">
+                    Same as Billing Address
+                </label>
             </div>
 
             <div>
-                <div className='mb-4'>
+                <div className="mb-4">
                     <Input
                         required
                         disabled={data.sameAsBilling}
                         type={`text`}
-                        name='shipFirstName'
+                        name="shipFirstName"
                         onChange={handleChange}
                         value={data.shipFirstName}
                         placeholder={`First Name`}
@@ -36,11 +36,11 @@ export const Shipping1 = () => {
                     />
                 </div>
 
-                <div className='mb-4'>
+                <div className="mb-4">
                     <Input
                         required
                         disabled={data.sameAsBilling}
-                        name='shipLastName'
+                        name="shipLastName"
                         onChange={handleChange}
                         value={data.shipLastName}
                         type={`text`}
@@ -50,11 +50,11 @@ export const Shipping1 = () => {
                     />
                 </div>
 
-                <div className='mb-4'>
+                <div className="mb-4">
                     <Input
                         required
                         disabled={data.sameAsBilling}
-                        name='shipPhoneNumber'
+                        name="shipPhoneNumber"
                         onChange={handleChange}
                         value={data.shipPhoneNumber}
                         type={`number`}
@@ -64,11 +64,11 @@ export const Shipping1 = () => {
                     />
                 </div>
 
-                <div className='mb-4'>
+                <div className="mb-4">
                     <Input
                         required
                         disabled={data.sameAsBilling}
-                        name='shipEmail'
+                        name="shipEmail"
                         onChange={handleChange}
                         value={data.shipEmail}
                         type={`email`}
@@ -77,24 +77,21 @@ export const Shipping1 = () => {
                         placeholder:text-white-950`}
                     />
                 </div>
-
             </div>
         </>
-
-    )
-}
+    );
+};
 
 export const Shipping2 = () => {
-
-    const { data, handleChange } = useFormContext()
+    const { data, handleChange } = useFormContext();
 
     return (
         <div>
-            <div className='mb-4'>
+            <div className="mb-4">
                 <Input
                     required
                     disabled={data.sameAsBilling}
-                    name='shipCity'
+                    name="shipCity"
                     onChange={handleChange}
                     value={data.shipCity}
                     type={`text`}
@@ -103,28 +100,28 @@ export const Shipping2 = () => {
                         placeholder:text-white-950`}
                 />
             </div>
-            <div className='mb-4'>
+            <div className="mb-4">
                 <select
                     required
                     disabled={data.sameAsBilling}
                     id=""
-                    name='shipState'
+                    name="shipState"
                     onChange={handleChange}
                     value={data.shipState}
                     className={`bg-white-50 text-white-950 w-full h-[40px] rounded-tr-sm rounded-br-sm indent-4
                         placeholder:text-white-950 outline-none`}
                 >
-                    <option >Select State</option>
-                    {
-                        statesInNigeria.map((state, index) => (
-                            <option key={index} value={state}>{state}</option>
-                        ))
-                    }
+                    <option>Select State</option>
+                    {statesInNigeria.map((state, index) => (
+                        <option key={index} value={state}>
+                            {state}
+                        </option>
+                    ))}
                 </select>
             </div>
-            <div className='mb-4'>
+            <div className="mb-4">
                 <Input
-                    name='shipZip'
+                    name="shipZip"
                     onChange={handleChange}
                     value={data.shipZip}
                     required
@@ -136,5 +133,5 @@ export const Shipping2 = () => {
                 />
             </div>
         </div>
-    )
-}
+    );
+};

@@ -1,17 +1,17 @@
-import React from 'react'
-import { Input } from '@/components/elements'
-import { useFormContext } from '@/hooks'
-import { statesInNigeria } from '@/constants'
+import React from 'react';
+import { Input } from '@/components/elements';
+import { useFormContext } from '@/hooks';
+import { statesInNigeria } from '@/constants';
 
 export const Billing1 = () => {
-    const { data, handleChange, step } = useFormContext()
+    const { data, handleChange, step } = useFormContext();
 
     return (
         <div>
-            <div className='mb-4'>
+            <div className="mb-4">
                 <Input
                     required
-                    name='billFirstName'
+                    name="billFirstName"
                     onChange={handleChange}
                     value={data.billFirstName}
                     type={`text`}
@@ -20,11 +20,11 @@ export const Billing1 = () => {
                         placeholder:text-white-950`}
                 />
             </div>
-            <div className='mb-4'>
+            <div className="mb-4">
                 <Input
                     required
                     type={`text`}
-                    name='billLastName'
+                    name="billLastName"
                     onChange={handleChange}
                     value={data.billLastName}
                     placeholder={`Last Name`}
@@ -33,11 +33,11 @@ export const Billing1 = () => {
                 />
             </div>
 
-            <div className='mb-4'>
+            <div className="mb-4">
                 <Input
                     required
                     type={`number`}
-                    name='billPhoneNumber'
+                    name="billPhoneNumber"
                     onChange={handleChange}
                     value={data.billPhoneNumber}
                     placeholder={`Phone Number`}
@@ -46,11 +46,11 @@ export const Billing1 = () => {
                 />
             </div>
 
-            <div className='mb-4'>
+            <div className="mb-4">
                 <Input
                     required
                     type={`email`}
-                    name='billEmail'
+                    name="billEmail"
                     onChange={handleChange}
                     value={data.billEmail}
                     placeholder={`Email Address`}
@@ -59,19 +59,19 @@ export const Billing1 = () => {
                 />
             </div>
         </div>
-    )
-}
+    );
+};
 
 export const Billing2 = () => {
-    const { data, handleChange} = useFormContext()
+    const { data, handleChange } = useFormContext();
 
     return (
         <div>
-            <div className='mb-4'>
+            <div className="mb-4">
                 <Input
                     required
                     type={`text`}
-                    name='billAddress'
+                    name="billAddress"
                     onChange={handleChange}
                     value={data.billAddress}
                     placeholder={`Address`}
@@ -79,11 +79,11 @@ export const Billing2 = () => {
                         placeholder:text-white-950`}
                 />
             </div>
-            <div className='mb-4'>
+            <div className="mb-4">
                 <Input
                     required
                     type={`text`}
-                    name='billCity'
+                    name="billCity"
                     onChange={handleChange}
                     value={data.billCity}
                     placeholder={`City`}
@@ -91,29 +91,29 @@ export const Billing2 = () => {
                         placeholder:text-white-950`}
                 />
             </div>
-            <div className='mb-4'>
+            <div className="mb-4">
                 <select
                     required
                     id=""
-                    name='billState'
+                    name="billState"
                     onChange={handleChange}
                     value={data.billState}
                     className={`bg-white-50 w-full h-[40px] text-white-950 rounded-tr-sm rounded-br-sm indent-4
                         placeholder:text-white-950 outline-none`}
                 >
-                    <option >Select State</option>
-                    {
-                        statesInNigeria.map((state, index) => (
-                            <option key={index} value={state}>{state}</option>
-                        ))
-                    }
+                    <option>Select State</option>
+                    {statesInNigeria.map((state, index) => (
+                        <option key={index} value={state}>
+                            {state}
+                        </option>
+                    ))}
                 </select>
             </div>
 
-            <div className='mb-4'>
+            <div className="mb-4">
                 <Input
                     required
-                    name='billZip'
+                    name="billZip"
                     onChange={handleChange}
                     value={data.billZip}
                     type={`number`}
@@ -123,5 +123,5 @@ export const Billing2 = () => {
                 />
             </div>
         </div>
-    )
-}
+    );
+};

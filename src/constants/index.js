@@ -1,3 +1,3 @@
-import { statesInNigeria } from "./stateInNigeria";
+import { statesInNigeria } from './stateInNigeria';
 
 export { statesInNigeria };

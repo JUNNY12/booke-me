@@ -1,14 +1,12 @@
+import Card from './Card';
+import Header from './Header';
+import Footer from './Footer';
+import { Container, FlexContainer, GridContainer } from './Container';
+import SideBar from './SideBar';
+import TopHeader from './TopHeader';
+import { Rating, Rate } from './Rating';
 
-import Card from "./Card"
-import Header from "./Header"
-import Footer from "./Footer"
-import { Container, FlexContainer, GridContainer } from "./Container"
-import SideBar from "./SideBar"
-import TopHeader from "./TopHeader"
-import { Rating,Rate } from "./Rating"
-
-
-export{
+export {
     Card,
     Header,
     Footer,
@@ -16,7 +14,7 @@ export{
     GridContainer,
     FlexContainer,
     SideBar,
-    TopHeader, 
+    TopHeader,
     Rating,
-    Rate
-}
+    Rate,
+};

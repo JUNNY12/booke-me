@@ -1,4 +1,3 @@
-import RegisterForm from "./RegisterForm";
+import RegisterForm from './RegisterForm';
 
-
-export {RegisterForm };
+export { RegisterForm };

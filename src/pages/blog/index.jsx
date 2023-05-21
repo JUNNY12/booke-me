@@ -1,12 +1,12 @@
-import React from 'react'
-import { BlogTemplate } from '@/components/templates/blog'
+import React from 'react';
+import { BlogTemplate } from '@/components/templates/blog';
 
 const Blog = () => {
     return (
-     <div className='bg-white-100'>
+        <div className="bg-white-100">
             <BlogTemplate />
-     </div>
-    )
-}
+        </div>
+    );
+};
 
-export default Blog
+export default Blog;

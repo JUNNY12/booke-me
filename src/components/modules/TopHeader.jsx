@@ -1,20 +1,22 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { Typography } from "../elements";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { Typography } from '../elements';
 
 const TopHeader = () => {
     const router = useRouter();
     const { asPath } = router;
     //   console.log(asPath)
     const decodedPath = decodeURIComponent(asPath); // Decode the URL-encoded asPath
-    const segments = decodedPath.split("/");
+    const segments = decodedPath.split('/');
     //   console.log(segments)
-    const currentRoute = segments[segments.length - 1] || "Home";
+    const currentRoute = segments[segments.length - 1] || 'Home';
 
     const links = segments.map((segment, index) => {
         const path =
-            index === 0 ? `/${segment}` : `${segments.slice(0, index + 1).join("/")}`;
-        const text = segment || "Home";
+            index === 0
+                ? `/${segment}`
+                : `${segments.slice(0, index + 1).join('/')}`;
+        const text = segment || 'Home';
         // console.log(path)
         // console.log(text)
 

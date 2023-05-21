@@ -1,14 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-const Input = ({className, ...rest}) => {
-  return (
-    <input
-    {...rest}
-    className={`
+const Input = ({ className, ...rest }) => {
+    return (
+        <input
+            {...rest}
+            className={`
     ${className} border-none outline-none`}
-    
-    />
-  )
-}
+        />
+    );
+};
 
-export default Input
+export default Input;

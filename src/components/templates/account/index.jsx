@@ -1,8 +1,8 @@
-import { Shipping1, Shipping2 } from "./Shipping";
-import AccountSetup from "./AccountSetup";
-import FormInput from "./FormInput";
-import { Profile } from "./Profile";
-import { Billing1, Billing2 } from "./Billing";
+import { Shipping1, Shipping2 } from './Shipping';
+import AccountSetup from './AccountSetup';
+import FormInput from './FormInput';
+import { Profile } from './Profile';
+import { Billing1, Billing2 } from './Billing';
 
 export {
     Billing1,
@@ -11,5 +11,5 @@ export {
     Shipping2,
     FormInput,
     AccountSetup,
-    Profile
-}
+    Profile,
+};
